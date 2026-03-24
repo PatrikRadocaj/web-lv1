@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tag: opisuje sadržaj stranice tražilicama -->
+    <meta name="description"
+        content="Responzivna web stranica o filmovima s tablicom podataka, slikama i navigacijom izrađenom u HTML-u i CSS-u.">
+    <link rel="stylesheet" href="styls.css">
+    <title>Stranica o filmovima</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <h1>Dobrodošli na moju web stranicu o filmovima</h1>
+            <p class="podnaslov">Pregled odabranih Netflix filmova i osnovnih podataka o njima</p>
+        </div>
+
+        <div class="nav-wrapper">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="hamburger" aria-label="Otvori navigaciju">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav aria-labelledby="primarna-navigacija" class="glavna-navigacija">
+                <h2 id="primarna-navigacija">Primarna navigacija</h2>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="grafikon.html">Grafikon</a></li>
+                    <li><a href="slike.html">Galerija</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="uvod" aria-labelledby="naslov-uvod">
+            <h2 id="naslov-uvod">O stranici</h2>
+            <p>
+                Ova stranica prikazuje odabrane filmove iz Netflix baze podataka.
+                Prikazani su osnovni podaci poput naslova, godine izlaska, žanra,
+                trajanja, države i dobne oznake.
+            </p>
+        </section>
+
+        <section class="glavni-sadrzaj" aria-labelledby="naslov-tablica">
+            <article class="tablica-clanak">
+                <h2 id="naslov-tablica">Popis filmova</h2>
+
+                <div class="table-wrapper">
+                    <table aria-describedby="opis-tablice">
+                        <caption id="opis-tablice">
+                            Tablica s prvih 20 filmova iz odabranog CSV skupa podataka
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Naslov</th>
+                                <th scope="col">Godina</th>
+                                <th scope="col">Žanr</th>
+                                <th scope="col">Trajanje</th>
+                                <th scope="col">Država</th>
+                                <th scope="col">Ocjena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>s1</td>
+                                <td>Dick Johnson Is Dead</td>
+                                <td>2020</td>
+                                <td>Documentaries</td>
+                                <td>90 min</td>
+                                <td>United States</td>
+                                <td>PG-13</td>
+                            </tr>
+                            <tr>
+                                <td>s7</td>
+                                <td>My Little Pony: A New Generation</td>
+                                <td>2021</td>
+                                <td>Children &amp; Family Movies</td>
+                                <td>91 min</td>
+                                <td>-</td>
+                                <td>PG</td>
+                            </tr>
+                            <tr>
+                                <td>s8</td>
+                                <td>Sankofa</td>
+                                <td>1993</td>
+                                <td>Dramas</td>
+                                <td>125 min</td>
+                                <td>United States, Ghana, Burkina Faso, United Kingdom, Germany, Ethiopia</td>
+                                <td>TV-MA</td>
+                            </tr>
+                            <tr>
+                                <td>s10</td>
+                                <td>The Starling</td>
+                                <td>2021</td>
+                                <td>Comedies</td>
+                                <td>104 min</td>
+                                <td>United States</td>
+                                <td>PG-13</td>
+                            </tr>
+                            <tr>
+                                <td>s13</td>
+                                <td>Je Suis Karl</td>
+                                <td>2021</td>
+                                <td>Dramas</td>
+                                <td>127 min</td>
+                                <td>Germany, Czech Republic</td>
+                                <td>TV-MA</td>
+                            </tr>
+                            <tr>
+                                <td>s14</td>
+                                <td>Confessions of an Invisible Girl</td>
+                                <td>2021</td>
+                                <td>Children &amp; Family Movies</td>
+                                <td>91 min</td>
+                                <td>-</td>
+                                <td>TV-PG</td>
+                            </tr>
+                            <tr>
+                                <td>s17</td>
+                                <td>Europe's Most Dangerous Man: Otto Skorzeny in Spain</td>
+                                <td>2020</td>
+                                <td>Documentaries</td>
+                                <td>67 min</td>
+                                <td>-</td>
+                                <td>TV-MA</td>
+                            </tr>
+                            <tr>
+                                <td>s19</td>
+                                <td>Intrusion</td>
+                                <td>2021</td>
+                                <td>Thrillers</td>
+                                <td>94 min</td>
+                                <td>-</td>
+                                <td>TV-14</td>
+                            </tr>
+                            <tr>
+                                <td>s23</td>
+                                <td>Avvai Shanmughi</td>
+                                <td>1996</td>
+                                <td>Comedies</td>
+                                <td>161 min</td>
+                                <td>-</td>
+                                <td>TV-PG</td>
+                            </tr>
+                            <tr>
+                                <td>s24</td>
+                                <td>Go! Go! Cory Carson: Chrissy Takes the Wheel</td>
+                                <td>2021</td>
+                                <td>Children &amp; Family Movies</td>
+                                <td>61 min</td>
+                                <td>-</td>
+                                <td>TV-Y</td>
+                            </tr>
+                            <tr>
+                                <td>s25</td>
+                                <td>Jeans</td>
+                                <td>1998</td>
+                                <td>Comedies</td>
+                                <td>166 min</td>
+                                <td>India</td>
+                                <td>TV-14</td>
+                            </tr>
+                            <tr>
+                                <td>s27</td>
+                                <td>Minsara Kanavu</td>
+                                <td>1997</td>
+                                <td>Comedies</td>
+                                <td>147 min</td>
+                                <td>-</td>
+                                <td>TV-PG</td>
+                            </tr>
+                            <tr>
+                                <td>s28</td>
+                                <td>Grown Ups</td>
+                                <td>2010</td>
+                                <td>Comedies</td>
+                                <td>103 min</td>
+                                <td>United States</td>
+                                <td>PG-13</td>
+                            </tr>
+                            <tr>
+                                <td>s29</td>
+                                <td>Dark Skies</td>
+                                <td>2013</td>
+                                <td>Horror Movies</td>
+                                <td>97 min</td>
+                                <td>United States</td>
+                                <td>PG-13</td>
+                            </tr>
+                            <tr>
+                                <td>s30</td>
+                                <td>Paranoia</td>
+                                <td>2013</td>
+                                <td>Thrillers</td>
+                                <td>106 min</td>
+                                <td>United States, India, France</td>
+                                <td>PG-13</td>
+                            </tr>
+                            <tr>
+                                <td>s31</td>
+                                <td>Ankahi Kahaniya</td>
+                                <td>2021</td>
+                                <td>Dramas</td>
+                                <td>111 min</td>
+                                <td>-</td>
+                                <td>TV-14</td>
+                            </tr>
+                            <tr>
+                                <td>s36</td>
+                                <td>The Father Who Moves Mountains</td>
+                                <td>2021</td>
+                                <td>Dramas</td>
+                                <td>110 min</td>
+                                <td>-</td>
+                                <td>TV-MA</td>
+                            </tr>
+                            <tr>
+                                <td>s37</td>
+                                <td>The Stronghold</td>
+                                <td>2021</td>
+                                <td>Action &amp; Adventure</td>
+                                <td>105 min</td>
+                                <td>-</td>
+                                <td>TV-MA</td>
+                            </tr>
+                            <tr>
+                                <td>s39</td>
+                                <td>Birth of the Dragon</td>
+                                <td>2017</td>
+                                <td>Action &amp; Adventure</td>
+                                <td>96 min</td>
+                                <td>China, Canada, United States</td>
+                                <td>PG-13</td>
+                            </tr>
+                            <tr>
+                                <td>s42</td>
+                                <td>Jaws</td>
+                                <td>1975</td>
+                                <td>Action &amp; Adventure</td>
+                                <td>124 min</td>
+                                <td>United States</td>
+                                <td>PG</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <aside class="sidebar" aria-labelledby="naslov-aside">
+                <h2 id="naslov-aside">Filmski kutak</h2>
+
+                <picture>
+                    <source media="(max-width: 768px)" srcset="image.png">
+                    <img src="image.png" alt="Kino projekcija">
+                </picture>
+
+                <p>
+                    Filmovi su jedan od najpopularnijih oblika zabave, ali i važan dio moderne
+                    kulture. Kroz različite žanrove, trajanje i produkcijske države možemo vidjeti
+                    koliko je filmska industrija raznolika.
+                </p>
+
+                <p>
+                    Na ovoj stranici prikazani su odabrani filmovi iz Netflix baze podataka.
+                    U tablici se mogu usporediti osnovne informacije poput godine izlaska,
+                    trajanja, države i dobne oznake, dok se na posebnoj stranici ti podaci
+                    dodatno prikazuju kroz grafikon.
+                </p>
+
+                <p>
+                    Posebno je zanimljivo promatrati koji se žanrovi najčešće pojavljuju među
+                    odabranim naslovima. Upravo zato je izrađena i dodatna stranica s grafičkim
+                    prikazom podataka.
+                </p>
+
+                <a class="akcija-gumb" href="grafikon.html">Pogledaj grafički prikaz</a>
+            </aside>
+        </section>
+
+        <section aria-labelledby="naslov-info">
+            <h2 id="naslov-info">O filmskoj bazi podataka</h2>
+
+            <article>
+                <h3>Što prikazuje tablica?</h3>
+                <p>
+                    Tablica prikazuje prvih 20 filmova izdvojenih iz CSV datoteke. Za svaki
+                    film navedeni su identifikator, naslov, godina izlaska, glavni žanr,
+                    trajanje, država te dobna oznaka. Takav prikaz omogućuje brz pregled i
+                    jednostavnu usporedbu između različitih naslova.
+                </p>
+            </article>
+
+            <article>
+                <h3>Zašto je ova tema odabrana?</h3>
+                <p>
+                    Tema filmova prikladna je za izradu web stranice jer kombinira tekstualne,
+                    tablične i vizualne podatke. Osim toga, filmski podaci su pregledni i lako
+                    se mogu pretvoriti u histogram ili kružni grafikon, što je korisno za
+                    daljnju analizu sadržaja.
+                </p>
+            </article>
+
+            <article>
+                <h3>Što se može analizirati?</h3>
+                <p>
+                    Na temelju prikazanih podataka može se analizirati zastupljenost pojedinih
+                    žanrova, usporediti trajanje filmova ili promatrati iz kojih država dolazi
+                    najveći broj naslova. Takve informacije pomažu pretvoriti običnu tablicu u
+                    smislen prikaz podataka.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026. Patrik</p>
+    </footer>
+</body>
+
+</html>
